@@ -1,0 +1,211 @@
+/*@radius Բ�Ǵ�С*/
+/*������Ӱ 
+@right_left �ұ���ӰΪ���� ���߸���
+@bottom_top �±���ӰΪ���� �ϱ߸���
+@box  ��Ӱ��С
+@box_color ��Ӱ��ɫ
+*/
+/*
+������Ӱ,����ָ��������Ӱ
+@right_left1 �ұ���ӰΪ���� ���߸���
+@bottom_top1 �±���ӰΪ���� �ϱ߸���
+@text  ��Ӱ��С
+@text_color ��Ӱ��ɫ
+*/
+/*
+͸���� �򽥱� 1Ϊ��͸�� 0͸��
+css3 rgba(110, 142, 185, .4)!important;ǰ��������ɫֵ ��һ����͸��ֵ
+������������������
+*/
+/*
+�в���
+@c1 ����
+@c2 �п�
+@c3 �м���
+@c4 �߿���ʽ
+*/
+/*��������
+@start  ���俪ʼ��ɫ
+@end  ������ɫ
+*/
+/*
+������ �����ڲ���
+@outline ��ʽ
+@outline1 ���� �������ڲ�
+*/
+/*
+��ת�Ƕ�
+@ro�������� 
+IE��֧�� �˾�֧��0��1��2��3
+*/
+/*
+������ת�Ƕ�
+@x�������ű���
+@y�������ű���
+*/
+/*
+�Ŵ���С
+@x�������ű���
+@y�������ű���
+*/
+/*
+�ƶ�����
+@x�����ƶ�����
+@y�����ƶ�����
+*/
+/*
+�ۺ�����4�ֱ仯,Ч���������Ĺ��ȶ���
+@rotate
+@scale
+@skew
+@translate
+*/
+/*
+���ȶ��� 
+id��css����
+2s����ʱ�� 0s�ǿ�ʼʱ��
+ease-in����
+*/
+.my_tran:hover {
+  transform: rotate(360deg) scale(1, 1) skew(0deg, 0deg) translate(100px, 0px);
+  -webkit-transform: rotate(360deg) scale(1, 1) skew(0deg, 0deg) translate(100px, 0px);
+  -moz-transform: rotate(360deg) scale(1, 1) skew(0deg, 0deg) translate(100px, 0px);
+  -o-transform: rotate(360deg) scale(1, 1) skew(0deg, 0deg) translate(100px, 0px);
+  -ms-transform: rotate(360deg) scale(1, 1) skew(0deg, 0deg) translate(100px, 0px);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transition: all 2s ease-in 0s;
+  -moz-transition: all 2s ease-in 0s;
+  -o-transition: all 2s ease-in 0s;
+  -webkit-transition: all 2s ease-in 0s;
+}
+/*
+less�ļ��ж����ĺ���
+Animation ���� 
+@animation-name�涨��Ҫ�󶨵�ѡ������ keyframe ����
+@animation-duration�涨���ɶ��������ѵ�ʱ�䣬������������,Ĭ���� 0��
+@animation-timing-function�涨�������ٶ����ߡ�Ĭ���� "ease"��
+@animation-delay�涨�ڶ�����ʼ֮ǰ���ӳ١�Ĭ���� 0��
+@animation-iteration-count�涨����Ӧ�ò��ŵĴ�����Ĭ���� 1��
+@animation-direction�涨�Ƿ�Ӧ���������򲥷Ŷ�����Ĭ���� "normal"��
+*/
+.my_animation {
+  animation: mykeyframes 5s linear 2s infinite normal;
+  /* Firefox: */
+  -moz-animation: mykeyframes 5s linear 2s infinite normal;
+  /* Safari �� Chrome: */
+  -webkit-animation: mykeyframes 5s linear 2s infinite normal;
+  /* Opera: */
+  -o-animation: mykeyframes 5s linear 2s infinite normal;
+}
+/***CSS������keyframes���£�****/
+@keyframes mykeyframes {
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+@-moz-keyframes mykeyframes {
+  /* Firefox */
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+@-webkit-keyframes mykeyframes {
+  /* Safari �� Chrome */
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+@-o-keyframes mykeyframes {
+  /* Opera */
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+}

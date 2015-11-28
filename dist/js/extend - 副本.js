@@ -1,0 +1,1 @@
+!function(o){o.fn.highLight=function(n){var r={box:null,color:"red",background:"yellow"},c=o.fn.extend(r,n),u=o(c.box);return u.css({background:c.background,color:c.color})}}(jQuery);

@@ -1,0 +1,54 @@
+@ccc:#ccc;
+@666:#666;
+@import "common.less";
+body{
+	background:@b;
+}
+.radius(@radius:5px){
+	-webkit-border-radius:@radius;
+	-moz-border-radius:@radius;
+	-ms-border-radius:@radius;
+	-o-border-radius:@radius;
+	border-radius:@radius;
+}
+.liNone{
+	list-style:none;
+}
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+    -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+    -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+    border-radius: @topleft @topright @bottomright @bottomleft;
+}
+  
+
+#somediv {
+    .border-radius-custom(20px, 20px, 0px, 0px);
+}
+#box{
+	width:999px;
+	height:100px;
+	background:@ccc;
+	margin:0 auto;
+	ul{
+		width:800px;
+		height:40px;
+		margin:0 auto;
+		border:1px solid desaturate(@666,10%);
+		.radius;
+		li{
+			float:left;
+			width:150px;
+			height:36px;
+			line-height:36px;
+			margin:3px;
+			text-align:center;
+			background:(@ccc *3);
+			.liNone;
+			.radius(6px);
+			&:hover{
+				color:red;
+			}
+		}
+	}
+}
+	

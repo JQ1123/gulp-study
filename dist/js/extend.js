@@ -1,0 +1,1 @@
+!function(o){o.highLight=function(r){var n={box:null,color:"red",background:"yellow"},c=o.fn.extend(n,r),l=o(c.box);return l?l.css({background:c.background,color:c.color}):void alert("请输入必要信息")}}(jQuery);
